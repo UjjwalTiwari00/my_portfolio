@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<style>
+    .bg-color {
+        background: rgb(20, 19, 26);
+    }
+
+    .bg-color1 {
+        background: rgb(28, 27, 35)
+    }
+
+    .bg-color2 {
+        background: rgb(28, 27, 33)
+    }
+
+    .border1 {
+        border: 20px solid rgb(16, 16, 16);
+    }
+
+    .trans:hover {
+        transition: all;
+        transition-duration: 200ms;
+        transform: scale(1.1);
+    }
+
+    .trans1:hover {
+        transition: all;
+        transition-duration: 50ms;
+        transform: scale(1.1);
+    }
+
+    .trans:hover {
+        box-shadow: rgba(221, 221, 221, 0.35) 0px 5px 15px;
+        
+    }
+    html {
+    scroll-behavior: smooth;
+}
+</style>
+
+<body>
+    <!-- upperbar -->
+    <section class="side_bar w-[100%] top-0 z-50 fixed ">
+        <div>
+            <div class="max-w-[full] h-[60px] border border-black flex items-center  justify-between  bg-color2 ">
+                <div class="flex ">
+                    <div class="w-4 h-4 bg-green-400 ml-6 rounded-full"></div>
+                    <div class="w-4 h-4 bg-green-400 ml-3 rounded-full"></div>
+                </div>
+                <div
+                    class="w-[120px] h-[30px] border border-white flex items-center justify-center bg-green-600 rounded-md mr-10">
+                    <a href="#contact_me" class=" font-bold font-body">Contact me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- bottom half part -->
+    <section class="">
+        <!-- right section -->
+        <section class="h-full w-[20%] fixed overflow-x-hidden overflow-y-auto bg-color1 mt-12">
+            <div class="flex flex-col justify-between ml-10 mt-10 text-white font-serif">
+                <!-- menu section -->
+                <div class="mt-5 w-40 h-40  flex flex-col justify-between">
+                    <a class=" p-2 flex trans1 " href="#home">
+                        <svg class="w-5 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                        </svg>
+                        <P class=" inline-block text-xl font-bold text-left  cursor-pointer mx-2">
+                            HOME</P>
+                        </a>
+
+                    <a class="p-2 flex trans1" href="#Project">
+                        <svg class="w-5 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" />
+                        </svg>
+
+                        <P class="text-xl font-bold text-left trans1 cursor-pointer  mx-2">Project
+                        </P>
+                    </a>
+                    <a class=" p-2 flex trans1" href="#skills">
+                        <svg class="w-5 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                        </svg>
+                        <P class="text-xl font-bold text-left trans1 cursor-pointer mx-2">Slills</P>
+                    </a>
+                    <a class=" p-2 flex trans1" href="#contact_me">
+                        <svg class="w-5 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <P class="text-xl font-bold text-left trans1 cursor-pointer mx-2">Contact</P>
+                    </a>
+                </div>
+                <!-- account section -->
+                <div class=" w-40 h-52 mt-10">
+                    <h2 class="text-2xl font-bold font-serif">social</h2>
+                    <div class="flex flex-col justify-evenly items-center h-48 ">
+                        <a class="p-2 flex trans1" href="https://www.instagram.com/imujjwaltiwari/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"
+                                style="color: #c13584" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                            <p class="text-sm font-semibold text-left mx-2 cursor-pointer" >Instagram</p>
+                        </a>
+
+                        <a class="p-2 flex trans1" href="https://www.linkedin.com/in/ujjwal-tiwari-538393256/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"
+                                style="color: #0077b5" viewBox="0 0 24 24">
+                                <path
+                                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                            </svg>
+                            <p class="text-sm font-semibold text-left mx-2  cursor-pointer" >Linkdln</p>
+                        </a>
+
+                        <a class="p-2 flex  trans1" href="https://github.com/UjjwalTiwari00" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"
+                                style="color: #333" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                            <p class="text-sm font-semibold text-left mx-2 cursor-pointer" >Github</p>
+                        </a>
+                        <a class="p-2 flex trans1" href="https://twitter.com/Ujjwaltiwari00" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"
+                                style="color: #1da1f2" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                            </svg>
+                            <p class="text-sm font-semibold text-left  cursor-pointer mx-2" >Twitter</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class=" w-40 h-52  mt-10 ">
+                    <h2 class="text-2xl font-bold font-serif">Projects</h2>
+                    <div class="flex flex-col justify-evenly items-center h-48 ">
+                        <div class="p-2 flex justify-evenly trans1"><svg class="w-5 " xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                            </svg>
+                            <a href="https://bucolic-torrone-f699e5.netlify.app/" target="_blank"> <p class="text-sm font-semibold text-left   cursor-pointer mx-2">Razorpay</p></a>
+                           
+                        </div>
+                        <div class="p-2 flex justify-evenly trans1"><svg class="w-5 " xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                            </svg>
+                            <a href="https://ujjwaltiwari00.github.io/codsoft_task1/" target="_blank"><p class="text-sm font-semibold text-left  cursor-pointer mx-2">calculator</p></a>
+                            
+                        </div>
+                        <div class="p-2 flex justify-around trans1"><svg class="w-5 " xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                            </svg>
+                            <p class="text-sm font-semibold text-left  cursor-pointer mx-2 ">Netflix</p>
+                        </div>
+                        <div class="p-2 flex justify-evenly trans1"><svg class="w-5 " xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                            </svg>
+                            <a href="https://github.com/UjjwalTiwari00/note_app" target="_blank"><p class="text-sm font-semibold text-left  cursor-pointer mx-2">Note App</p></a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class=" mt-5">
+                    <h2></h2>
+                    <div class="flex flex-col justify-evenly items-center h-20 ">
+                        <div class="p-1">
+                            <p class="text-xl font-semibold text-left  trans1 cursor-pointer"></p>
+                        </div>
+                        <div class="p-1">
+                            <p class="text-xl font-semibold text-left  trans1 cursor-pointer"></p>
+                        </div>
+                        <div class="p-1">
+                            <p class="text-xl font-semibold text-left  trans1 cursor-pointer"></p>
+                        </div>
+                        <div class="p-1">
+                            <p class="text-xl font-semibold text-left trans1 cursor-pointer"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- left section  -->
+        <section class="w-[80%] overflow-x-hidden overflow-y-auto float-right mt-12">
+
+
+            <!-- intro section  -->
+            <section>
+                <div class="relative w-full h-[150px]" id="home">
+                    <!-- <img src="./forest.jpg" class="w-full h-full bg-cover absolute"> -->
+                    <div style="background-image: url(./picture/backgroundred.jpg);" class="w-full h-full bg-cover absolute">
+                    </div>
+                    <div class="w-[full] h-[100px] relative items-center flex justify-between"
+                        style="top: 22px; left: 0;">
+                        <div class="w-[100px] h-[100px] absolute ml-10 border-2 rounded-[50%]">
+                            <img src="./picture/my_pic_2.jpg" class="w-full h-full bg-center rounded-[50%]">
+                        </div>
+                        <div class="ml-56">
+                            <h2 class="text-white font-bold font-body text-3xl ">Ujjwal Tiwari</h2>
+                        </div>
+                        <div class="mr-10">
+                            <button class="text-white font-bold font-mono bg-orange-600 p-2 rounded-md">Hire Me</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- intro_section_1 -->
+            <section class="">
+                <div class="w-full h-[400px] outline outline-black flex justify-center items-center bg-color">
+                    <div class="w-full h-[350px] flex justify-center items-center">
+                        <div class="w-[300px] h-[300px] ">
+                            <img src="./picture/my_pic.jpg" class="w-full h-full">
+                        </div>
+                        <div class="w-[500px] h-[300px] text-white mx-9">
+                            <!-- <span id="element"></span> -->
+                            <p class="text-3xl font-bold font-body"> Hi , my name is <span class="text-purple-500 font-body">Ujjwal</span>
+                            </p>
+                            <p class="text-2xl font-bold">I'm a passionate </p>
+                            <p class="text-2xl font-bold"><span id="element"></span> </p>
+                            <div class=" inline-block my-36">
+                                <a href="./picture/resume.pdf" class="text-white font-bold font-mono bg-violet-900 p-2 rounded-md " download>My resume</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- project_section -->
+            <section class="bg-color" id="Project">
+
+                <div class="max-w-full h-[350px]  flex flex-col justify-center items-center ">
+                    <div class="flex justify-center items-center flex-col">
+                        <h1 class="text-white text-3xl font-body">PROJECTS</h1>
+                        <div class="w-20 h-1 bg-green-500 rounded-md"></div>
+                    </div>
+                    <div class="w-[90%] h-[300px]   flex justify-around items-center">
+                        <div class="h-[210px] w-[250px]  cursor-pointer">
+                            <div class="w-[full] h-[140px]  relative rounded-t-md trans">
+                                <img src="./picture/Razorpay.jpg" class="w-full h-full rounded-t-md">
+                                <div class="w-full h-2 bg-green-400 absolute " style="bottom:0;"></div>
+                            </div>
+                            <div class="flex justify-center items-center my-6">
+                                <a href="https://bucolic-torrone-f699e5.netlify.app/" target="_blank">
+                                    <p class="font-bold  text-white font-body">Razorpay Clone</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="h-[210px] w-[250px]  cursor-pointer">
+                            <div class="w-[full] h-[140px]  relative rounded-t-md trans">
+                                <img src="./picture/calculator.jpg" class="w-full h-full rounded-md">
+                                <div class="w-full h-2 bg-green-400 absolute " style="bottom:0;"></div>
+                            </div>
+                            <div class="flex justify-center items-center my-6">
+                                <a href="https://ujjwaltiwari00.github.io/codsoft_task1/" target="_blank">
+                                    <p class=" font-bold text-white font-body">calculator</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="h-[210px] w-[250px]  cursor-pointer">
+                            <div class="w-[full] h-[140px]  relative rounded-t-md trans">
+                                <img src="./picture/Netflix-img.png" class="w-full h-full rounded-md">
+                                <div class="w-full h-2 bg-green-400 absolute " style="bottom:0;"></div>
+                            </div>
+                            <div class="flex justify-center items-center  my-6">
+                                <a href="">
+                                    <p class=" font-bold text-white font-body">Netflix Clone</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="h-[210px] w-[250px]  cursor-pointer">
+                            <div class="w-[full] h-[140px]  relative rounded-t-md trans">
+                                <img src="./picture/note.png" class="w-full h-full rounded-md">
+                                <div class="w-full h-2 bg-green-400 absolute " style="bottom:0;"></div>
+                            </div>
+                            <div class="flex justify-center items-center my-6"><a href="https://github.com/UjjwalTiwari00/note_app" target="_blank">
+                                    <p class=" font-bold text-white font-body">note app</p>
+                                </a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- skills_section -->
+            <section class="bg-color" id="skills">
+
+                <div class="w-full min-h-[500px]  flex flex-col justify-center items-center ">
+                    <div class="flex justify-center items-center flex-col ">
+                        <h1 class="text-white text-3xl font-bold font-serif">SKILLS</h1>
+                        <div class="w-10 h-1 bg-green-500 rounded-md"></div>
+                    </div>
+                    <div class="w-full ">
+                        <div class="flex justify-start items-center flex-col w-[320px]">
+                            <h1 class="text-white text-3xl font-body">FRONTEND</h1>
+                            <div class="w-10 h-1 bg-green-500 rounded-md"></div>
+                        </div>
+                    </div>
+
+
+                    <!-- Frontend -->
+                    <div class="w-[90%] h-[300px]  flex justify-around items-center group transition-all duration-200">
+                        <div class="h-[210px] w-[250px]  cursor-pointer rounded-md ">
+                            <div class="w-[full] h-[140px]  relative rounded-t-md trans">
+                                <img src="./picture/html_css.png" class="w-full h-full rounded-t-md ">
+                                <div class="bg-white w-full h-2 relative rounded-b-md">
+                                    <div class="w-60 h-2 bg-green-400  absolute" style="bottom:0;"></div>
+                                </div>
+                            </div>
+                            <div class="flex justify-center items-center  my-6">
+                                <a href="">
+                                    <p class=" font-bold text-white font-body">html,css</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="h-[210px] w-[250px]  cursor-pointer rounded-md">
+                            <div class="w-[full] h-[140px]  relative rounded-t-md trans">
+                                <img src="./picture/javascript.webp" class="w-full h-full rounded-t-md">
+                                <div class="bg-white w-full h-2 relative rounded-b-md">
+                                    <div class="w-44 h-2 bg-green-400  absolute" style="bottom:0;"></div>
+                                </div>
+                            </div>
+                            <div class="flex justify-center items-center my-4">
+                                <a href="">
+                                    <p class=" font-bold text-white font-body">Javascript</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="h-[210px] w-[250px] cursor-pointer">
+                            <div class="w-[full] h-[140px] relative rounded-md trans">
+                                <img src="./picture/react.jpeg" class="w-full h-full rounded-t-md ">
+                                <div class="bg-white w-full h-2 relative rounded-b-md">
+                                    <div class="w-20 h-2 bg-green-400  absolute" style="bottom:0;"></div>
+                                </div>
+                            </div>
+                            <div class="flex justify-center items-center  my-4">
+                                <a href="">
+                                    <p class=" font-bold text-white font-body">react</p>
+                                </a>
+                            </div>
+
+
+
+                        </div>
+                        <div class="h-[210px] w-[250px] cursor-pointer">
+                            <div class="w-[full] h-[140px]  relative rounded-md trans">
+                                <img src="./picture/react.jpeg" class="w-full h-full rounded-t-md">
+                                <div class="bg-white w-full h-2 relative rounded-b-md">
+                                    <div class="w-60 h-2 bg-green-400  absolute" style="bottom:0;"></div>
+                                </div>
+                            </div>
+                            <div class="flex justify-center items-center  my-4">
+                                <a href="">
+                                    <p class=" font-bold text-white font-body">tailwind</p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="w-full h-[250px] flex flex-col justify-center items-center ">
+                        <div class="w-[90%] h-[250px]   flex justify-start items-center ">
+                            <div class="h-[210px] w-[250px]  cursor-pointer mx-2">
+                                <div class="w-[full] h-[140px]  relative rounded-md trans">
+                                    <img src="./picture/java_cpp.jpeg" class="w-full h-full rounded-t-md">
+                                    <div class="bg-white w-full h-2 relative rounded-b-md">
+                                        <div class="w-36 h-2 bg-green-400  absolute" style="bottom:0;"></div>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center my-4">
+                                    <a href="">
+                                        <p class=" font-bold text-white font-body">java,cpp</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="w-full min-h-[400px]  flex flex-col justify-start items-center ">
+                        <div class="w-full">
+                            <div class="flex justify-start items-center flex-col w-[320px] ">
+                                <h1 class="text-white text-3xl font-body">BACKEND</h1>
+                                <div class="w-10 h-1 bg-green-500 rounded-md"></div>
+                            </div>
+                        </div>
+
+                        <!-- Backend -->
+                        <div class="w-[90%] h-[300px]  flex justify-start items-center">
+                            <div class="h-[210px] w-[250px]  cursor-pointer mx-6">
+                                <div class="w-[full] h-[140px]  relative rounded-t-md trans">
+                                    <img src="./picture/node.webp" class="w-full h-full">
+                                    <div class="bg-white w-full h-2 relative rounded-b-md">
+                                        <div class="w-36 h-2 bg-green-400  absolute" style="bottom:0;"></div>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center  py-4">
+                                    <a href="">
+                                        <p class=" font-body font-bold text-white">nodeJs</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="h-[210px] w-[250px]  cursor-pointer mx-3">
+                                <div class="w-[full] h-[140px]  relative rounded-t-md trans">
+                                    <img src="./picture/mongodb.png" class="w-full h-full">
+                                    <div class="bg-white w-full h-2 relative rounded-b-md">
+                                        <div class="w-36 h-2 bg-green-400  absolute" style="bottom:0;"></div>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center  py-4">
+                                    <a href="">
+                                        <p class=" font-body font-bold text-white">MongoDB</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </section>
+
+            <!-- contact me -->
+            <section class="bg-color flex justify-center items-center flex-col" id="contact_me">
+                <div class=" h-20 flex justify-center items-center flex-col">
+                    <h1 class="text-white text-5xl flex justify-center items-center flex-col">Contact Me</h1>
+                    <div class="w-20 h-1 bg-green-500 rounded-md mt-3"></div>
+                </div>
+                <div class=" md:w-72 md:max-w-full mt-16">
+                    <div class="p-6 border border-gray-300 sm:rounded-md">
+                        <form action="https://formspree.io/f/xzblgzny"
+                        method="POST">
+                            <label  class="block mb-6">
+                                <span  class="text-white">Your name</span>
+                                <input type="text" name="name" required autocomplete="off" class="
+                      block
+                      w-full
+                      mt-1
+                      border-gray-300
+                      rounded-md
+                      shadow-sm
+                      focus:border-indigo-300
+                      focus:ring
+                      focus:ring-indigo-200
+                      focus:ring-opacity-50
+                    " placeholder="Your Name" />
+                            </label>
+                            <label class="block mb-6">
+                                <span class="text-white">Email address</span>
+                                <input name="email" type="email" required autocomplete="off" class="
+                      block
+                      w-full
+                      mt-1
+                      border-gray-300
+                      rounded-md
+                      shadow-sm
+                      focus:border-indigo-300
+                      focus:ring
+                      focus:ring-indigo-200
+                      focus:ring-opacity-50
+                    " placeholder="joe.bloggs@example.com" required />
+                            </label>
+                            <label class="block mb-6">
+                                <span class="text-white">Message</span>
+                                <textarea name="message" class="
+                      block
+                      w-full
+                      mt-1
+                      border-gray-300
+                      rounded-md
+                      shadow-sm
+                      focus:border-indigo-300
+                      focus:ring
+                      focus:ring-indigo-200
+                      focus:ring-opacity-50
+                    " rows="3" placeholder="Tell us what you're thinking about..."></textarea>
+                            </label>
+                            <div class="mb-6">
+                                <button type="submit" class="
+                      h-10
+                      px-5
+                      text-indigo-100
+                      bg-indigo-700
+                      rounded-lg
+                      transition-colors
+                      duration-150
+                      focus:shadow-outline
+                      hover:bg-indigo-800
+                    ">
+                                    Contact Us
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- footer -->
+   <section class="text-white bg-color1">
+    <div class="h-12">
+        <div class=" inline-block my-3 mx-10">
+            <span>Copyright&#169;imujjwaltiwari@gmail.com</span></div>
+    </div>
+   </section>
+
+        </section>
+    </section>
+   
+
+</body>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+<script>
+    var typed = new Typed('#element', {
+        strings: ['<i>Web Developer</i>', '&amp; Graphic Designer', '&amp;Frontend Developer', '&amp;Backend Depeloper '],
+        typeSpeed: 50,
+    });
+</script>
+
+</html>
